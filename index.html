@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pamoja Bets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand">Pamoja<span>Bets</span></div>
+      <div class="tag">Peer-to-peer · Worldwide · 18+ only</div>
+    </div>
+    <div class="seg" role="group" aria-label="Viewing as">
+      <button id="as-kevin" aria-pressed="true" data-user="kevin">Kevin</button>
+      <button id="as-brian" aria-pressed="false" data-user="brian">Brian</button>
+      <button id="as-admin" aria-pressed="false" data-user="admin">Admin</button>
+    </div>
+  </header>
+
+  <section class="wallet" id="wallet"></section>
+
+  <div class="grid">
+    <aside class="panel" id="left"></aside>
+    <main class="panel">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div id="view" class="list"></div>
+    </main>
+  </div>
+
+  <p class="foot">Prototype with sample data. Stakes are shown in KES; M-Pesa, escrow and settlement are simulated in the browser. A live launch needs a Gambling Regulatory Authority licence, KYC/age checks and a Kenyan escrow bank account, and licensing in every other country you accept players from.</p>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="js/world-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
